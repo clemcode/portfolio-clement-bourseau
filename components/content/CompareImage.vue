@@ -26,9 +26,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="hover">
+  <div>
     <Transition>
-      <ImgComparisonSlider v-if="isClient">
+      <ImgComparisonSlider v-if="isClient" class="hover">
         <img
           slot="first"
           style="width: 100%"
@@ -46,7 +46,11 @@ defineProps({
       ⟷
       <span>{{ secondText }}</span>
     </p>
-    <!-- TODO : images format original -->
+    <p class="text-left w-100">
+      <a class="underline" :href="`/hd${first}`" target="_blank" rel="noopener noreferrer">{{ firstText}} HD</a>
+      <br />
+      <a class="underline" :href="`/hd${second}`" target="_blank" rel="noopener noreferrer">{{ secondText}} HD</a>
+    </p>
   </div>
 </template>
 
