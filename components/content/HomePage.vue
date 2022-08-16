@@ -57,4 +57,12 @@
 .hero-container__cta__link {
   background-color: rgb(9 35 66);
 }
+
+header > div > div:nth-child(0n+3) a {
+  display: none;
+}
+
+footer {
+  display: none;
+}
 </style>
