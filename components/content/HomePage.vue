@@ -12,16 +12,16 @@
           "
         >
           <div class="hero-container__cta">
-            <h1 class="font-bold text-3xl mb-4 leading-[1.15] text-white-900">
+            <h1 class="font-bold text-3xl mb-4 leading-[1.15] text-white">
               Clément Bourseau
             </h1>
-            <p class="mb-10 text-gray-500">
+            <p class="mb-10 text-gray-200">
               Modélisation 3D
             </p>
             <NuxtLink
               class="
                 download-btn
-                text-black-500
+                text-white
                 font-bold
                 px-6
                 py-3

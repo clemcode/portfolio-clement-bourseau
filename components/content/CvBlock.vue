@@ -1,32 +1,22 @@
 <script setup>
 defineProps({
   poste: String,
-  description: String,
   periode: String,
-  entreprise: String,
-  youtubeId: String
+  entreprise: String
 })
 
 const isOpen = ref(false)
 </script>
 
 <template>
-  <div>
-    <p>{{ poste }} / <span>{{ entreprise }}</span> <span>{{ periode }}</span></p>
-    <p>
-      {{ description }}
-    </p>
-    <div v-if="youtubeId">
-      <button @click="isOpen = !isOpen">
-        {{ isOpen ? 'Fermer' : 'Afficher' }}
-      </button>
-      <div v-show="isOpen">
-        <iframe 
-          :src="'https://www.youtube.com/embed/' + youtubeId" 
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen
-        />
+  <article>
+    <header class="block rounded-md p-1 bg-gray-200 dark:bg-gray-800 pr-4">
+      <div class="flex justify-between">
+        <p class="font-bold">{{ poste }}</p>
+        <p class="flex-end">{{ periode }}</p>
       </div>
-    </div>
-  </div>
+      <p>{{ entreprise }}</p>
+    </header>
+    <slot />
+  </article>
 </template>
