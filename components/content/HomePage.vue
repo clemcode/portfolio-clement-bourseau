@@ -30,7 +30,7 @@
                 hover:scale-105
                 hero-container__cta__link
               "
-              to="/portfolio/3d/wizard-staff"
+              to="/portfolio/3d/sidecar-bmw-r12"
               >
                 Portfolio
               </NuxtLink>

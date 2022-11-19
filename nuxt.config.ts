@@ -1,3 +1,3 @@
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/docus', '@nuxtjs/tailwindcss'],
+  extends: ['@nuxt-themes/docus'],
 });
