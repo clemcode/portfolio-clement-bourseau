@@ -1,35 +1,16 @@
 <template>
     <main>
       <section class="text-center">
-        <div
-          class="
-            flex
-            items-center
-            flex-col
-            justify-center
-            pt-16
-            hero-container
-          "
-        >
+        <div class="hero-container">
           <div class="hero-container__cta">
-            <h1 class="font-bold text-3xl mb-4 leading-[1.15] text-white">
+            <h1 class="main-title">
               Clément Bourseau
             </h1>
             <p class="mb-10 text-gray-200">
               Modélisation 3D
             </p>
             <NuxtLink
-              class="
-                download-btn
-                text-white
-                font-bold
-                px-6
-                py-3
-                rounded-md
-                transition-transform
-                hover:scale-105
-                hero-container__cta__link
-              "
+              class="hero-container__cta__link"
               to="/portfolio/3d/sidecar-bmw-r12"
               >
                 Portfolio
@@ -47,6 +28,11 @@
   background-position: center;
   width: 100%;
   height: 90vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 64px;
 }
 
 .hero-container__cta {
@@ -56,6 +42,10 @@
 
 .hero-container__cta__link {
   background-color: rgb(9 35 66);
+  color: white;
+  font-weight: bold;
+  padding: 24px 48px;
+  border-radius: 8px;
 }
 
 header > div > div:nth-child(0n+3) a {
@@ -64,5 +54,16 @@ header > div > div:nth-child(0n+3) a {
 
 footer {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: white;
 }
 </style>
