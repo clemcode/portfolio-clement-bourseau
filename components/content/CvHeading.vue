@@ -1,5 +1,18 @@
 <template>
-  <div class="p-4 mb-2 rounded bg-gray-200 dark:bg-gray-800">
+  <div class="cv-heading">
     <slot />
   </div>
 </template>
+
+<style scoped>
+.cv-heading {
+  padding: 1rem; 
+  margin-bottom: 0.5rem; 
+  background-color: #E5E7EB; 
+  border-radius: 0.25rem; 
+}
+
+.dark .cv-heading {
+  background-color: #1F2937;
+}
+</style>

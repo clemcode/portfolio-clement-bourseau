@@ -55,6 +55,22 @@ defineProps({
 </template>
 
 <style>
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;

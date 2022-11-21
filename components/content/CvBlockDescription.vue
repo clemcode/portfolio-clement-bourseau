@@ -8,11 +8,11 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <section class="mb-4 p-1">
-    <p class="font-medium mb-2">
+  <section class="cv-block-description">
+    <p>
       {{ description }}
     </p>
-    <div v-if="youtubeId" class="text-sm">
+    <div v-if="youtubeId" class="youtube-container">
       <button @click="isOpen = !isOpen">
         🖥
         {{ isOpen ? 'Fermer la vidéo ▴' : 'Afficher la vidéo ▾' }}
@@ -29,3 +29,20 @@ const isOpen = ref(false)
     </div>
   </section>
 </template>
+
+<style scoped>
+.cv-block-description {
+  padding: 0.25rem; 
+  margin-bottom: 1rem; 
+}
+
+.cv-block-description p {
+  margin-bottom: 0.5rem; 
+  font-weight: 500; 
+}
+
+.cv-block-description .youtube-container {
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+}
+</style>

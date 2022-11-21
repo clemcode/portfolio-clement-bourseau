@@ -10,8 +10,8 @@ const isOpen = ref(false)
 
 <template>
   <article>
-    <header class="block rounded-md p-1 bg-gray-200 dark:bg-gray-800 pr-4">
-      <div class="flex justify-between">
+    <header class="cv-block-header">
+      <div class="cv-block-header-wrapper">
         <p class="font-bold">{{ poste }}</p>
         <p class="flex-end">{{ periode }}</p>
       </div>
@@ -20,3 +20,30 @@ const isOpen = ref(false)
     <slot />
   </article>
 </template>
+
+<style scoped>
+.cv-block-header {
+  display: block; 
+  padding: 0.25rem; 
+  padding-right: 1rem; 
+  background-color: #E5E7EB; 
+  border-radius: 0.375rem; 
+}
+
+.dark .cv-block-header {
+  background-color: #1F2937; ;
+}
+
+.cv-block-header-wrapper {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.font-bold {
+  font-weight: bold; 
+}
+
+.flex-end {
+  text-align: right; 
+}
+</style>

@@ -6,7 +6,7 @@
             <h1 class="main-title">
               Clément Bourseau
             </h1>
-            <p class="mb-10 text-gray-200">
+            <p class="subtitle">
               Modélisation 3D
             </p>
             <NuxtLink
@@ -44,7 +44,7 @@
   background-color: rgb(9 35 66);
   color: white;
   font-weight: bold;
-  padding: 24px 48px;
+  padding: 12px;
   border-radius: 8px;
 }
 
@@ -65,5 +65,10 @@ footer {
   font-size: 24px;
   margin-bottom: 16px;
   color: white;
+}
+
+.subtitle {
+  margin-bottom: 2.5rem; 
+  color: #E5E7EB; 
 }
 </style>
