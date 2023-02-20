@@ -11,7 +11,7 @@
             </p>
             <NuxtLink
               class="hero-container__cta__link"
-              to="/portfolio/3d/sidecar-bmw-r12"
+              to="/portfolio/3d/bouclier"
               >
                 Portfolio
               </NuxtLink>
@@ -70,5 +70,10 @@ footer {
 .subtitle {
   margin-bottom: 2.5rem; 
   color: #E5E7EB; 
+}
+
+img {
+  max-width: 1080px;
+  margin: 0 auto!important;
 }
 </style>
