@@ -76,4 +76,10 @@ img {
   max-width: 1080px;
   margin: 0 auto!important;
 }
+
+@media (max-width: 1080px) {
+  img {
+    max-width: 100%;
+  }
+}
 </style>
